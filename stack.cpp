@@ -11,8 +11,8 @@ void Stack::reset(){
 
 bool Stack::push(int value){
     if(lenght < 10){
-    mass[++lenght] = value;
-    return true;
+         mass[lenght++] = value;
+         return true;
     } else {
         std::cout << "Stack is overflow!" << std::endl;
         return false;
@@ -27,7 +27,7 @@ int Stack::pop(){
 
 void Stack::print(){
     std::cout << "( ";
-    for(int i =1; i < lenght+1; i++) {
+    for(int i =0; i < lenght; i++) {
         std::cout << mass[i] << " ";
     }
     std::cout << ")" << std::endl;

@@ -8,6 +8,7 @@
 class RGBA
 {
 public:
+    RGBA();
     RGBA(std::uint8_t red, std::uint8_t green, std::uint8_t blue, std::uint8_t alpha);
     void print();
 private:

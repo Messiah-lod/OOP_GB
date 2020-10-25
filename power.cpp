@@ -3,8 +3,6 @@
 
 Power::Power()
 {
-    a = 0;
-    b = 0;
 }
 
 void Power::set(int x, int y)

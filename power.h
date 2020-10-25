@@ -6,8 +6,8 @@
 class Power
 {
 private:
-    int a;
-    int b;
+    int a = 0;
+    int b = 0;
 public:
     Power();
     void set(int x, int y);
