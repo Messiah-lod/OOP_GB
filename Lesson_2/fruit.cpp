@@ -2,7 +2,8 @@
 
 Fruit::Fruit()
 {
-
+    m_name = "";
+    m_color = "";
 }
 
 std::string Fruit::getName(){
