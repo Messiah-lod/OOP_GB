@@ -9,7 +9,7 @@ class Apple : public Fruit
 {
 public:
     Apple();
-    Apple(std::string name);
+    Apple(std::string color);
 };
 
 #endif // APPLE_H

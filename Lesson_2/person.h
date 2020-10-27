@@ -7,7 +7,7 @@
 
 class Person
 {
-private:
+protected:
     std::string m_name;
     unsigned int m_age;
     bool m_sex;
