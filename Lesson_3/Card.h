@@ -7,14 +7,27 @@ class Card
 {
 private:
 	enum suit	{bubi, trefi, chervi, piki};
-	enum value {six = 6, seven, eight, nine, ten, J=10 ,Q=10 ,K=10 ,A = 1};
-	bool m_position = 0;//вверх рубашкой
-	value m_value = six;
+	enum value {
+		two,
+		three,
+		four,
+		five,
+		six, 
+		seven, 
+		eight, 
+		nine, 
+		ten, 
+		J ,
+		Q ,
+		K ,
+		A };
+	bool m_position = false;//вверх рубашкой
+	value m_value = two;
 	suit m_suit = bubi;
 
 public:
 	Card();
 	void Flip();
-	int GetValue();
+	int GetValue() const;
 	~Card();
 };

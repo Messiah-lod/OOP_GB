@@ -7,21 +7,14 @@ Card::Card()
 
 void Card::Flip()
 {
-	(m_position) ? m_position = false : m_position = true;
+	m_position = !(m_position);
 }
 
-int Card::GetValue()
+int Card::GetValue() const
 {
-	if (m_value == six) return 6;
-	else if (m_value == seven) return 7;
-	else if (m_value == eight) return 8;
-	else if (m_value == nine) return 9;
-	else if (m_value == ten ||
-			m_value == J ||
-			m_value == Q ||
-			m_value == K) return 10;
-	else if (m_value == A) return 1;
-	else return 0;
+	int valueCard[13] = {
+	2,3,4,5,6,7,8,9,10,10,10,10,1};
+	return valueCard[m_value];
 }
 
 Card::~Card()

@@ -77,9 +77,7 @@ bool Fraction::operator==(const Fraction & f)
 {
 	Fraction f1 = nod(m_numerator, m_denominator);
 	Fraction f2 = nod(f.m_numerator, f.m_denominator);
-	if (f1.m_numerator == f2.m_numerator && f1.m_denominator == f2.m_denominator)
-		return true;
-	else return false;
+	return (f1.m_numerator == f2.m_numerator && f1.m_denominator == f2.m_denominator);
 }
 
 bool Fraction::operator!=(const Fraction & f)
