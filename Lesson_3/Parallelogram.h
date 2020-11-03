@@ -9,7 +9,7 @@ protected:
 public:
 	Parallelogram();
 	Parallelogram(double s, double h);
-	virtual double area() override;
+	double area() override;
 	~Parallelogram();
 };
 

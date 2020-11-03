@@ -8,7 +8,7 @@ protected:
 public:
 	Circle();
 	Circle(double r);
-	virtual double area() override;
+	double area() override;
     ~Circle() override;
 };
 

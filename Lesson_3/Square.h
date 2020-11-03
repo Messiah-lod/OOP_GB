@@ -6,7 +6,7 @@ class Square :
 public:
 	Square();
 	Square(double s);
-	virtual double area() override;
+	double area() override;
 	~Square();
 };
 

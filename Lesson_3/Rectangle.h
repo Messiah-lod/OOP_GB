@@ -6,7 +6,7 @@ class Rectangle :
 public:
 	Rectangle();
 	Rectangle(double w, double h);
-	virtual double area() override;
+	double area() override;
 	~Rectangle();
 };
 

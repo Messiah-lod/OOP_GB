@@ -6,7 +6,7 @@ class Rhombus :
 public:
 	Rhombus();
 	Rhombus(double s, double h);
-	virtual double area() override;
+	double area() override;
 	~Rhombus();
 };
 
