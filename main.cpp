@@ -8,6 +8,8 @@
 #include <vector>
 
 #include "./Lesson_4/ArrayInt.h"
+#include "./Lesson_4/Card.h"
+#include "./Lesson_4/Hand.h"
 
 
 int uniqueValue(std::vector<int> &vec)
@@ -44,6 +46,16 @@ int main()
 	for (size_t i = 0; i < vec.size(); i++) std::cout << "[" << vec[i] << "] ";
 	std::cout << std::endl << "Unique value " << uniqueValue(vec) << std::endl;
 
+	std::cout << "***Task 4.3****" << std::endl;
+	Card* ten = new Card(Card::ten, Card::chervi);
+	Card* A = new Card(Card::A, Card::bubi);
+	Card* six = new Card(Card::six, Card::piki);
+
+	Hand hand;
+	hand.Add(ten);
+	hand.Add(A);
+	hand.Add(six);
+	std::cout << "The total points of the cards: " << hand.GetValue() << std::endl;
 
 	system("pause");
     return 0;
