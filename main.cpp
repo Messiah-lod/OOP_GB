@@ -1,17 +1,20 @@
 /* Created by Maksim V. Chizhov
 * IDE: qtcreator
-* Lesson __ OOP
+* Lesson BlackJack
 */
 
 
 #include <iostream>
-//#include "./Lesson_2/person.h"
+#include "Hand.h"
+#include "Card.h"
+#include "GenericPlayer.h"
+
 
 
 int main()
 {
-//    std::cout << "***Task 1.1****" << std::endl;
 
 
+	system("pause");
     return 0;
 }
