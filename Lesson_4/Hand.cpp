@@ -15,6 +15,8 @@ void Hand::Add(Card* card)
 
 void Hand::Clear()
 {
+	for (size_t i = 0; i < cards.size(); i++)
+		delete cards[i];
 	cards.clear();
 }
 

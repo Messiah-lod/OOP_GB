@@ -56,6 +56,7 @@ int main()
 	hand.Add(A);
 	hand.Add(six);
 	std::cout << "The total points of the cards: " << hand.GetValue() << std::endl;
+	hand.Clear();
 
 	system("pause");
     return 0;
