@@ -1,5 +1,5 @@
 /* Created by Maksim V. Chizhov
-* IDE: qtcreator
+* IDE: vs
 * Lesson 5 OOP
 */
 
@@ -37,8 +37,7 @@ int main()
 
 	std::cout << "***Task 5.3****" << std::endl;
 	StringValuePair<int> svp("Amazing", 7);
-//	std::cout << "Pair: " << svp.first() << ' ' << svp.second() << '\n';
-
+	std::cout << "Pair: " << svp.first() << ' ' << svp.second() << '\n';
 
 
 	system("pause");

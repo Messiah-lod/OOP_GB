@@ -5,17 +5,19 @@
 #include <string>
 #include "pair.h"
 
-template <typename S>
-class StringValuePair : public Pair<std::string, S>
+template <class U>
+class StringValuePair: public Pair<std::string, U>
 {
 public:
-	StringValuePair(std::string a, S b){
-		Pair::m_a = a;
-		Pair::m_b = b;
-	};
+	StringValuePair(std::string a, U b) : Pair<std::string, U>(a, b) {};
 
 	~StringValuePair() {};
 
-	std::string first() const { return m_a; };
-	S second() const { return (S)m_b; };
+	std::string first() const { 
+		return Pair<std::string, U>::m_a; 
+	};
+
+	U second() const { 
+		return Pair<std::string, U>::m_b; 
+	};
 };
