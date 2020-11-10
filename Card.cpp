@@ -17,7 +17,21 @@ int Card::GetValue() const
 	return valueCard[m_value];
 }
 
+std::string Card::GetSuit() const
+{
+	std::string su[4] = {
+	"bubi", "trefi", "chervi", "piki" };
+	return su[m_suit];
+}
+
 Card::~Card()
 {
 	std::cout << "Delete Card" << std::endl;
+}
+
+std::ostream& operator<<(std::ostream& out, const Card& c)
+{
+	if (c.m_position) out << c.GetSuit() << " " << c.GetValue();
+	else out << "XX";
+	return out;
 }

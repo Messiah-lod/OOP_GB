@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <string>
+#include <ostream>
 
 class Card
 {
@@ -28,7 +29,9 @@ public:
 	Card(value val, suit su) : m_value(val), m_suit(su) {};
 	void Flip();
 	int GetValue() const;
+	std::string GetSuit() const;
 	~Card();
+	friend std::ostream& operator<< (std::ostream& out, const Card& c);
 
 private:
 
