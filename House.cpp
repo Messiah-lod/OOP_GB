@@ -10,7 +10,7 @@ House::House(std::string name)
 
 bool House::IsHitting() const
 {
-	return (GetValue() <= 16);
+	return  (!cards.empty()) ? (GetValue() <= 16) : false;
 }
 
 void House::FlipFirstCard()

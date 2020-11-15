@@ -2,7 +2,7 @@
 
 Card::Card()
 {
-	std::cout << "Create Card" << std::endl;
+//	std::cout << "Create Card" << std::endl;
 }
 
 void Card::Flip()
@@ -17,6 +17,15 @@ int Card::GetValue() const
 	return valueCard[m_value];
 }
 
+std::string Card::GetValueStr() const
+{
+	std::string va[13] = {
+		"two",	"three","four",	"five",
+		"six","seven","eight",	"nine",
+		"ten","J","Q","K","A "};
+	return va[m_value];
+}
+
 std::string Card::GetSuit() const
 {
 	std::string su[4] = {
@@ -26,12 +35,12 @@ std::string Card::GetSuit() const
 
 Card::~Card()
 {
-	std::cout << "Delete Card" << std::endl;
+//	std::cout << "Delete Card" << std::endl;
 }
 
 std::ostream& operator<<(std::ostream& out, const Card& c)
 {
-	if (c.m_position) out << c.GetSuit() << " " << c.GetValue();
+	if (c.m_position) out << c.GetSuit() << " " << c.GetValueStr();
 	else out << "XX";
 	return out;
 }

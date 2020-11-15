@@ -29,13 +29,14 @@ public:
 	Card(value val, suit su) : m_value(val), m_suit(su) {};
 	void Flip();
 	int GetValue() const;
+	std::string GetValueStr() const;
 	std::string GetSuit() const;
 	~Card();
 	friend std::ostream& operator<< (std::ostream& out, const Card& c);
 
 private:
 
-	bool m_position = false;//вверх рубашкой
+	bool m_position = true;//вверх рубашкой
 	value m_value = two;
 	suit m_suit = bubi;
 

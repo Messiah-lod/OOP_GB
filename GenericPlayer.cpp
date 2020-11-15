@@ -18,6 +18,6 @@ std::ostream& operator<<(std::ostream& out, const GenericPlayer& gp)
 	{
 		out << "[" << *gp.cards[i] << "]\t";
 	}
-	out << gp.GetValue();
+//	out << gp.GetValue();
 	return out;
 }
